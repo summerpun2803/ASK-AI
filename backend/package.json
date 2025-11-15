@@ -1,0 +1,34 @@
+{
+  "name": "mini-asklumen-backend",
+  "version": "1.0.0",
+  "description": "Mini AskLumen backend (Node.js + Express) - modular",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon --watch src --exec \"node src/server.js\""
+  },
+  "dependencies": {
+    "@huggingface/inference": "^4.13.3",
+    "@mistralai/mistralai": "^1.10.0",
+    "bcrypt": "^5.1.0",
+    "bytez": "^0.7.0",
+    "bytez.js": "^1.1.18",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "groq-sdk": "^0.35.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^7.0.0",
+    "node-fetch": "^3.3.2",
+    "openai": "^6.9.0",
+    "uuid": "^9.0.0",
+    "multer": "^2.0.2",
+    "streamifier": "^0.1.1",
+    "cloudinary": "^2.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
