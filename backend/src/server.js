@@ -13,7 +13,7 @@ await connectToMongo(); // important: ensure DB connected before starting
 const app = express();
 app.use(express.json({ limit: "2mb" }));
 app.use(cookieParser());
-app.use(cors({ origin: [FRONTEND_ORIGIN, "http://localhost:3000", "*", "https://ask-ai-cyan.vercel.app/"] }));
+app.use(cors());
 
 // mounted routers
 import authRoutes from "./routes/auth.js";
